@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/stick.wav-c91f7465e728928ea30d539a76500583.sample"
+
+[deps]
+
+source_file="res://audio/stick.wav"
+dest_files=[ "res://.import/stick.wav-c91f7465e728928ea30d539a76500583.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

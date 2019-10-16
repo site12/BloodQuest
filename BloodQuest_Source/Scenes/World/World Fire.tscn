@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/World/World Fire.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Firebook.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/World/item_spawned.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 20, 20 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "bookfloat"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -4.21 ), Vector2( 0, 0 ) ]
+}
+
+[node name="World Fire" type="Area2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -0.548715 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "bookfloat"
+anims/bookfloat = SubResource( 2 )
+
+[node name="item_spawned" parent="." instance=ExtResource( 3 )]
+

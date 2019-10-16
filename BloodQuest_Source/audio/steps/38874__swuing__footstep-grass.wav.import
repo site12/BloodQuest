@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/38874__swuing__footstep-grass.wav-31a5e82b3ebf6ba08c535656baec7b37.sample"
+
+[deps]
+
+source_file="res://audio/steps/38874__swuing__footstep-grass.wav"
+dest_files=[ "res://.import/38874__swuing__footstep-grass.wav-31a5e82b3ebf6ba08c535656baec7b37.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

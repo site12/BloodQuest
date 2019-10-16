@@ -1,0 +1,68 @@
+[gd_resource type="TileSet" load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Grass_Tile_hole.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Grass_Tiles.png" type="Texture" id=2]
+
+[resource]
+3/name = "Grass_Tile_hole.png 3"
+3/texture = ExtResource( 1 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 64, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Grass_TilesAtlas.png 4"
+4/texture = ExtResource( 2 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 256, 64 )
+4/tile_mode = 2
+4/autotile/icon_coordinate = Vector2( 0, 0 )
+4/autotile/tile_size = Vector2( 64, 64 )
+4/autotile/spacing = 0
+4/autotile/occluder_map = [  ]
+4/autotile/navpoly_map = [  ]
+4/autotile/z_index_map = [  ]
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shapes = [  ]
+4/z_index = 0
+5/name = "Grass_TilesAuto.png 5"
+5/texture = ExtResource( 2 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 384, 384 )
+5/tile_mode = 1
+5/autotile/bitmask_mode = 0
+5/autotile/bitmask_flags = [ Vector2( 0, 1 ), 320, Vector2( 0, 2 ), 69, Vector2( 0, 3 ), 321, Vector2( 1, 1 ), 64, Vector2( 1, 2 ), 261, Vector2( 1, 3 ), 324, Vector2( 2, 1 ), 260, Vector2( 2, 2 ), 260, Vector2( 2, 3 ), 4, Vector2( 3, 1 ), 325, Vector2( 3, 2 ), 325, Vector2( 3, 3 ), 5, Vector2( 4, 0 ), 256, Vector2( 4, 1 ), 325, Vector2( 4, 2 ), 325, Vector2( 4, 3 ), 5, Vector2( 5, 0 ), 320, Vector2( 5, 1 ), 65, Vector2( 5, 2 ), 65, Vector2( 5, 3 ), 1 ]
+5/autotile/icon_coordinate = Vector2( 0, 0 )
+5/autotile/tile_size = Vector2( 64, 64 )
+5/autotile/spacing = 0
+5/autotile/occluder_map = [  ]
+5/autotile/navpoly_map = [  ]
+5/autotile/priority_map = [ Vector3( 3, 1, 4 ), Vector3( 4, 2, 14 ) ]
+5/autotile/z_index_map = [  ]
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shapes = [  ]
+5/z_index = 0
+6/name = "Grass_TilesCorners.png 6"
+6/texture = ExtResource( 2 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 64, 256, 256, 128 )
+6/tile_mode = 2
+6/autotile/icon_coordinate = Vector2( 0, 0 )
+6/autotile/tile_size = Vector2( 64, 64 )
+6/autotile/spacing = 0
+6/autotile/occluder_map = [  ]
+6/autotile/navpoly_map = [  ]
+6/autotile/z_index_map = [  ]
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shapes = [  ]
+6/z_index = 0
+

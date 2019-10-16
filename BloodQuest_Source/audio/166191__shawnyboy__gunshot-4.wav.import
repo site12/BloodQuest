@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/166191__shawnyboy__gunshot-4.wav-0cbdd84145b78cf4a24e1f4ff4e6dbe8.sample"
+
+[deps]
+
+source_file="res://audio/166191__shawnyboy__gunshot-4.wav"
+dest_files=[ "res://.import/166191__shawnyboy__gunshot-4.wav-0cbdd84145b78cf4a24e1f4ff4e6dbe8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

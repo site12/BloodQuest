@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/105016__julien-matthey__jm-fx-fireball-01.wav-260d2a37f56bc49d894a21f9d30b6120.sample"
+
+[deps]
+
+source_file="res://audio/105016__julien-matthey__jm-fx-fireball-01.wav"
+dest_files=[ "res://.import/105016__julien-matthey__jm-fx-fireball-01.wav-260d2a37f56bc49d894a21f9d30b6120.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

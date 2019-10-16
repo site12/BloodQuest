@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://music/SwordBoss.wav" type="AudioStream" id=1]
+[ext_resource path="res://AudioSword.gd" type="Script" id=2]
+
+[node name="AudioSword" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+script = ExtResource( 2 )
+

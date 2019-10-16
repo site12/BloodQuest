@@ -1,0 +1,186 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scenes/UI/Fade.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/blood-quest-redwhite-title.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/button-white.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/TinyKnight/Sleeping.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/zzz.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/z.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/zz.png" type="Texture" id=7]
+
+[sub_resource type="Animation" id=1]
+resource_name = "fadeAnim"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0.490196 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../TextureRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../TextureRect:rect_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( -0.1, 0 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.5, 0.5 ), Vector2( 0.75, 0.75 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../TextureRect:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( -0.1, 0 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 256, 100 ), Vector2( 225, 100 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../../Sprite:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("../TextureRect2:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("../TextureRect2:rect_scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.5, 0.5 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("../TextureRect2:rect_position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 340, 450 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "fadeout"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ null, ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+pause_mode = 2
+script = ExtResource( 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 0.490196 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MarginContainer/ColorRect"]
+autoplay = "fadeAnim"
+anims/fadeAnim = SubResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MarginContainer"]
+anims/fadeout = SubResource( 2 )
+
+[node name="Button" type="Button" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+flat = true
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 502.724, 298.962 )
+rotation = -0.579449
+scale = Vector2( 0.5, 0.5 )
+z_index = -1
+texture = ExtResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Sprite"]
+position = Vector2( 17.7797, -127.366 )
+rotation = 0.558505
+frames = SubResource( 3 )
+frame = 3
+playing = true
+
+[connection signal="pressed" from="MarginContainer/Button" to="." method="_on_Button_pressed"]

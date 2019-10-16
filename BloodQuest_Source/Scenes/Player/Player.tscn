@@ -1,0 +1,227 @@
+[gd_scene load_steps=98 format=2]
+
+[ext_resource path="res://Scripts/PlayerController.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/TinyKnight/SE/Tiny Knight SE running1.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/TinyKnight/SE/Tiny Knight SE running2.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/TinyKnight/SE/Tiny Knight SE running3.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/TinyKnight/SE/Tiny Knight SE running4.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/TinyKnight/SE/Tiny Knight SE running5.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/TinyKnight/SE/Tiny Knight SE running6.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/TinyKnight/SE/Tiny Knight SE running7.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/TinyKnight/SE/Tiny Knight SE running8.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/TinyKnight/Left/Running Tiny knight1.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/TinyKnight/Left/Running Tiny knight2.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/TinyKnight/Left/Running Tiny knight3.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/TinyKnight/Left/Running Tiny knight4.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/TinyKnight/Left/Running Tiny knight5.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/TinyKnight/Left/Running Tiny knight6.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/TinyKnight/Left/Running Tiny knight7.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/TinyKnight/Left/Running Tiny knight8.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/TinyKnight/Back/Tiny Knight running away0.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/TinyKnight/Back/Tiny Knight running away1.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/TinyKnight/Back/Tiny Knight running away2.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/TinyKnight/Back/Tiny Knight running away3.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/TinyKnight/Back/Tiny Knight running away4.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/TinyKnight/Back/Tiny Knight running away5.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/TinyKnight/Back/Tiny Knight running away6.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/TinyKnight/Back/Tiny Knight running away7.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/TinyKnight/Idles/Untitled-1_0000_north-east.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/TinyKnight/Idles/Untitled-1_0001_north-west.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/TinyKnight/Idles/Untitled-1_0002_south-west.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/TinyKnight/Idles/Untitled-1_0003_south-east.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/TinyKnight/Idles/Untitled-1_0004_North.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/TinyKnight/Idles/Untitled-1_0005_south.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/TinyKnight/Idles/Untitled-1_0006_west.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/TinyKnight/Idles/Untitled-1_0007_East.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/TinyKnight/Forward/Tiny Knight running forward1.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/TinyKnight/Forward/Tiny Knight running forward2.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/TinyKnight/Forward/Tiny Knight running forward3.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/TinyKnight/Forward/Tiny Knight running forward4.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/TinyKnight/Forward/Tiny Knight running forward5.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/TinyKnight/Forward/Tiny Knight running forward6.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/TinyKnight/Forward/Tiny Knight running forward7.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/TinyKnight/Forward/Tiny Knight running forward8.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/TinyKnight/SW/Tiny Knight SW running1.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/TinyKnight/SW/Tiny Knight SW running2.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/TinyKnight/SW/Tiny Knight SW running3.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/TinyKnight/SW/Tiny Knight SW running4.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/TinyKnight/SW/Tiny Knight SW running5.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/TinyKnight/SW/Tiny Knight SW running6.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/TinyKnight/SW/Tiny Knight SW running7.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/TinyKnight/SW/Tiny Knight SW running8.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/TinyKnight/Right/Running Tiny knight1.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/TinyKnight/Right/Running Tiny knight2.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/TinyKnight/Right/Running Tiny knight3.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/TinyKnight/Right/Running Tiny knight4.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/TinyKnight/Right/Running Tiny knight5.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/TinyKnight/Right/Running Tiny knight6.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/TinyKnight/Right/Running Tiny knight7.png" type="Texture" id=56]
+[ext_resource path="res://Sprites/TinyKnight/Right/Running Tiny knight8.png" type="Texture" id=57]
+[ext_resource path="res://Sprites/TinyKnight/NW/TinyKnight NW running1.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/TinyKnight/NW/TinyKnight NW running2.png" type="Texture" id=59]
+[ext_resource path="res://Sprites/TinyKnight/NW/TinyKnight NW running3.png" type="Texture" id=60]
+[ext_resource path="res://Sprites/TinyKnight/NW/TinyKnight NW running4.png" type="Texture" id=61]
+[ext_resource path="res://Sprites/TinyKnight/NW/TinyKnight NW running5.png" type="Texture" id=62]
+[ext_resource path="res://Sprites/TinyKnight/NW/TinyKnight NW running6.png" type="Texture" id=63]
+[ext_resource path="res://Sprites/TinyKnight/NW/TinyKnight NW running7.png" type="Texture" id=64]
+[ext_resource path="res://Sprites/TinyKnight/NW/TinyKnight NW running8.png" type="Texture" id=65]
+[ext_resource path="res://Sprites/TinyKnight/NE/Tiny Knight NE running1.png" type="Texture" id=66]
+[ext_resource path="res://Sprites/TinyKnight/NE/Tiny Knight NE running2.png" type="Texture" id=67]
+[ext_resource path="res://Sprites/TinyKnight/NE/Tiny Knight NE running3.png" type="Texture" id=68]
+[ext_resource path="res://Sprites/TinyKnight/NE/Tiny Knight NE running4.png" type="Texture" id=69]
+[ext_resource path="res://Sprites/TinyKnight/NE/Tiny Knight NE running5.png" type="Texture" id=70]
+[ext_resource path="res://Sprites/TinyKnight/NE/Tiny Knight NE running6.png" type="Texture" id=71]
+[ext_resource path="res://Sprites/TinyKnight/NE/Tiny Knight NE running7.png" type="Texture" id=72]
+[ext_resource path="res://Sprites/TinyKnight/NE/Tiny Knight NE running8.png" type="Texture" id=73]
+[ext_resource path="res://Sprites/TinyKnight/Dash/Backward Shield.png" type="Texture" id=74]
+[ext_resource path="res://Sprites/TinyKnight/Dash/Forward Shield.png" type="Texture" id=75]
+[ext_resource path="res://Sprites/TinyKnight/Dash/Left Shield.png" type="Texture" id=76]
+[ext_resource path="res://Sprites/TinyKnight/Dash/Right Shield.png" type="Texture" id=77]
+[ext_resource path="res://Scripts/Health.gd" type="Script" id=78]
+[ext_resource path="res://audio/player_dash.wav" type="AudioStream" id=79]
+[ext_resource path="res://audio/bash.wav" type="AudioStream" id=80]
+[ext_resource path="res://audio/steps/38874__swuing__footstep-grass.wav" type="AudioStream" id=81]
+[ext_resource path="res://Sprites/attack/stick swing1.png" type="Texture" id=82]
+[ext_resource path="res://Sprites/attack/stick swing2.png" type="Texture" id=83]
+[ext_resource path="res://Sprites/attack/stick swing3.png" type="Texture" id=84]
+[ext_resource path="res://Sprites/attack/stick swing4.png" type="Texture" id=85]
+[ext_resource path="res://Sprites/attack/stick swing5.png" type="Texture" id=86]
+[ext_resource path="res://Sprites/attack/sword swing1.png" type="Texture" id=87]
+[ext_resource path="res://Sprites/attack/sword swing2.png" type="Texture" id=88]
+[ext_resource path="res://Sprites/attack/sword swing3.png" type="Texture" id=89]
+[ext_resource path="res://Sprites/attack/sword swing4.png" type="Texture" id=90]
+[ext_resource path="res://Sprites/attack/sword swing5.png" type="Texture" id=91]
+[ext_resource path="res://audio/stick.wav" type="AudioStream" id=92]
+[ext_resource path="res://audio/sword.wav" type="AudioStream" id=93]
+[ext_resource path="res://audio/player_hit.wav" type="AudioStream" id=94]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "315",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "180",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "90",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "Idles",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "270",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "225",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 57 ) ],
+"loop": true,
+"name": "0",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 58 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ) ],
+"loop": true,
+"name": "135",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 66 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ) ],
+"loop": true,
+"name": "45",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ) ],
+"loop": true,
+"name": "Dash",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 20.0067, 25 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ) ],
+"loop": false,
+"name": "wood",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ) ],
+"loop": false,
+"name": "metal",
+"speed": 15.0
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+scale = Vector2( 0.4, 0.4 )
+collision_layer = 129
+collision_mask = 129
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 3, 3 )
+frames = SubResource( 1 )
+animation = "0"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+scale = Vector2( 3, 3 )
+shape = SubResource( 2 )
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource( 78 )
+
+[node name="Hitbox" type="Area2D" parent="."]
+visible = false
+collision_layer = 2048
+collision_mask = 2048
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Hitbox"]
+visible = false
+scale = Vector2( 3, 3 )
+shape = SubResource( 2 )
+
+[node name="dash" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 79 )
+
+[node name="bash" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 80 )
+
+[node name="footstep" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 81 )
+pitch_scale = 0.5
+
+[node name="swing_pivot" type="Node2D" parent="."]
+visible = false
+
+[node name="swing" type="AnimatedSprite" parent="swing_pivot"]
+position = Vector2( 0, -96 )
+scale = Vector2( 5, 5 )
+frames = SubResource( 3 )
+animation = "metal"
+frame = 1
+
+[node name="stick_swing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 92 )
+
+[node name="sword_swing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 93 )
+
+[node name="player_hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 94 )
+
+[connection signal="health_depleted" from="Health" to="." method="_on_Health_health_depleted"]
+[connection signal="area_entered" from="Hitbox" to="." method="_on_Hitbox_area_entered"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_Hitbox_body_entered"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/202147_qubodup_enchant (online-audio-converter.com).wav-ea641ac8c5d1180a7dea722b1d2ec635.sample"
+
+[deps]
+
+source_file="res://audio/202147_qubodup_enchant (online-audio-converter.com).wav"
+dest_files=[ "res://.import/202147_qubodup_enchant (online-audio-converter.com).wav-ea641ac8c5d1180a7dea722b1d2ec635.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

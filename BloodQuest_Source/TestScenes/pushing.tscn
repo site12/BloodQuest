@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Crate.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Sprites/20170908_125902.png" type="Texture" id=3]
+
+[node name="pushing" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 110, 1.52588e-005 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+
+[node name="Crate" parent="." instance=ExtResource( 2 )]
+position = Vector2( -20, 10 )
+
+[node name="20170908_125902" type="Sprite" parent="."]
+position = Vector2( -100, 210 )
+texture = ExtResource( 3 )
+

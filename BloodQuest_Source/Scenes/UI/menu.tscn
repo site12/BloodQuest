@@ -1,0 +1,26 @@
+[gd_scene format=2]
+
+[node name="menu" type="CanvasLayer"]
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Button3" type="Button" parent="VSplitContainer"]
+margin_right = 106.0
+margin_bottom = 20.0
+rect_scale = Vector2( 5, 5 )
+text = "BLOOD QUEST"
+
+[node name="Button" type="Button" parent="VSplitContainer"]
+margin_top = 200.0
+margin_right = 106.0
+margin_bottom = 220.0
+text = "Play"
+
+[node name="Button2" type="Button" parent="VSplitContainer"]
+margin_top = 240.0
+margin_right = 63.0
+margin_bottom = 260.0
+text = "Options"
+

@@ -1,0 +1,4 @@
+[gd_scene format=2]
+
+[node name="shield_spawn_point" type="Node2D"]
+

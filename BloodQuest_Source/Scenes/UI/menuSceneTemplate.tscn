@@ -1,0 +1,27 @@
+[gd_scene format=2]
+
+[node name="menuSceneTemplate" type="Control"]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="GUI" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Main Menu" type="VBoxContainer" parent="GUI"]
+margin_right = 1024.0
+margin_bottom = 600.0
+alignment = 1
+
+[node name="Play" type="Button" parent="GUI/Main Menu"]
+margin_top = 278.0
+margin_right = 1024.0
+margin_bottom = 298.0
+text = "Play"
+
+[node name="Options" type="Button" parent="GUI/Main Menu"]
+margin_top = 302.0
+margin_right = 1024.0
+margin_bottom = 322.0
+text = "Options"
+

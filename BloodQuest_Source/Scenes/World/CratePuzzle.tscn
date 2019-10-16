@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Crate.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Activators/Crate_activator.tscn" type="PackedScene" id=2]
+
+[node name="CratePuzzle" type="Node2D"]
+
+[node name="Crate" parent="." instance=ExtResource( 1 )]
+position = Vector2( 24660, 17950 )
+collision_mask = 0
+
+[node name="Crate2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 24660, 18010 )
+collision_mask = 0
+
+[node name="Crate3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 24660, 18070 )
+collision_mask = 0
+
+[node name="Crate_activator2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 24410, 18010 )
+
+[node name="Crate_activator3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 24210, 17950 )
+
+[node name="Crate_activator" parent="." instance=ExtResource( 2 )]
+position = Vector2( 24110, 18070 )
+
